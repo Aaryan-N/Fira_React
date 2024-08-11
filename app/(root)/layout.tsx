@@ -1,6 +1,7 @@
 import React, {ReactNode} from 'react';
 import Navbar from "@/components/Navbar";
 import type {Metadata} from "next";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: "Fira",
@@ -18,6 +19,7 @@ const HomeLayout = ({ children }: {children : ReactNode}) => {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </main>
     );
 };
